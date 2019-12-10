@@ -5,7 +5,7 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 /*components*/
-@import url("./components/_banner.css");
+/*@import url("./components/_banner.css");*/
 @import url("./components/_button.css");
 @import url("./components/_card.css");
 @import url("./components/_footer.css");
@@ -42,6 +42,44 @@ h2 {
 
 .service {
   text-align: center;
+}
+
+
+
+
+
+
+
+.banner {
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+}
+
+.banner-container {
+  padding: 150px 10%;
+
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
 }
 
 
