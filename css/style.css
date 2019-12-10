@@ -26,13 +26,23 @@ h2 {
 }
 
 .services {
-  height: 20vh;
+  height: 15vh;
 }
 
 .contact {
   height: 70vh;
+  display: flex;
+  justify-content: space-around;
 }
 
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  text-align: center;
+}
 
 
 
