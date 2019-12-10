@@ -12,6 +12,35 @@
 @import url("./components/_spinner.css");
 @import url("./components/_navbar.css");
 
+/*General Style Rules*/
+h2 {
+  text-align: center;
+}
+
+.bio {
+  height: 100vh;
+}
+
+.projects {
+  height: 100vh;
+}
+
+.services {
+  height: 20vh;
+}
+
+.contact {
+  height: 70vh;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*Site Responsiveness*/
@@ -34,6 +63,4 @@
   }
 }
 
-h2 {
-  text-align: center;
-}
+
