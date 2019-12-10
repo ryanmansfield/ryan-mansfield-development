@@ -12,7 +12,6 @@
 @import url("./components/_spinner.css");
 
 
-
 /*Site Responsiveness*/
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -31,4 +30,8 @@
   .container {
     width: 300px;
   }
+}
+
+h2 {
+  text-align: center;
 }
