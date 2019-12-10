@@ -6,7 +6,7 @@
 }
 
 .banner-container {
-  padding: 150px 0;
+  padding: 150px 10%;
 
 }
 
@@ -23,5 +23,10 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
 }
 
