@@ -13,6 +13,8 @@
 @import url("../css/components/_spinner.css");
 @import url("./components/_navbar.css");
 */
+
+
 /*General Style Rules*/
 h2 {
   text-align: center;
@@ -233,61 +235,7 @@ h2 {
   to   { -webkit-transform: rotateY(-360deg); }
 }
 
-/* ---------- cube styles ------------- */
-.cube > .one {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(100px);
-}
 
-.cube > .two {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(100px);
-}
-
-.cube > .three {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(100px);
-}
-
-.cube > .four {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(100px);
-}
-
-.cube > .five {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(100px);
-}
-
-.cube > .six {
-  opacity: 0.5;
-  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
-}
-
-
-.cube > .seven {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(90deg) translateZ(100px) rotate(180deg);
-}
-
-.cube > .eight {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8) translateZ(100px);
-}
-
-.cube > .nine {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(90deg) translateZ(100px);
-}
-
-.cube > .ten {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(180deg) translateZ(100px);
-}
-
-.cube > .eleven {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(-90deg) translateZ(100px);
-}
-
-.cube > .twelve {
-  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(100px);
-}
 
 /* ---------- ring styles ------------- */
 .ring > .one {
@@ -348,48 +296,6 @@ h2 {
 .controls > div {
   margin: 10px;
 }
-
-
-
-
-.banner {
-  background-size: cover;
-  background-position: center;
-
-  height: 100vh;
-}
-
-.banner-container {
-  padding: 150px 10%;
-
-}
-
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-
-
-
-
-
 
 
 
