@@ -1,8 +1,13 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+
   height: 100vh;
+}
+
+.banner-container {
+  padding: 150px 0;
+
 }
 
 .banner h1 {
@@ -19,3 +24,4 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
