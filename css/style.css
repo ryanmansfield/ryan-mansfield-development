@@ -20,9 +20,17 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
+
+/*Bio Section*/
 .bio {
   height: 100vh;
 }
+
+
 
 .portfolio {
   height: 100vh;
@@ -30,15 +38,7 @@ h2 {
 
 .services {
   height: 15vh;
-}
-
-.contact {
-  height: 70vh;
-  display: flex;
-  justify-content: space-around;
-}
-
-.services {
+  padding-top: 8px;
   display: flex;
   justify-content: space-around;
 }
@@ -100,26 +100,54 @@ h2 {
 
 
 /*Card*/
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+.card-trip {
+  overflow: hidden;
+  background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-}// Smallest device
+}
+
+// Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
@@ -155,6 +183,7 @@ h2 {
 }
 
 
+
 /*Footer*/
 .footer {
   background: #F4F4F4;
@@ -186,7 +215,7 @@ h2 {
 /*Spinner*/
 #container {
   width: 100%;
-  height: 485px;
+  height: 70vh;
   -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
   -webkit-perspective-origin: 50% 225px;
 }
@@ -234,8 +263,6 @@ h2 {
   from { -webkit-transform: rotateY(0); }
   to   { -webkit-transform: rotateY(-360deg); }
 }
-
-
 
 /* ---------- ring styles ------------- */
 .ring > .one {
