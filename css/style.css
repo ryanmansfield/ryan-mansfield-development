@@ -14,7 +14,7 @@
 */
 /*General Style Rules*/
 h2 {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 h3 {
@@ -103,7 +103,7 @@ h3 {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.card > img {
+.card > a > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
@@ -129,6 +129,8 @@ h3 {
   align-items: flex-end;
   position: relative;
 }
+
+
 
 
 .cards {
