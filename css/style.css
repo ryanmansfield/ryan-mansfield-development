@@ -7,11 +7,14 @@
 /*components*/
 /*@import url("./components/_banner.css");*/
 /*@import url("./components/_button.css");
+>>>>>>> 85c38a713b18a5513015afa6e96e99aa74d84e88
 @import url("./components/_card.css");
 @import url("./components/_footer.css");
-@import url("./components/_spinner.css");
+@import url("../css/components/_spinner.css");
 @import url("./components/_navbar.css");
 */
+
+
 /*General Style Rules*/
 h2 {
   text-align: center;
