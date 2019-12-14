@@ -93,21 +93,17 @@ h3 {
 
 .bio i {
   color: #2E6171;
+  font-size: 100px;
 }
 
 .bio p {
   color: white;
 }
 
-.services {
+.skills {
   display: flex;
   justify-content: space-around;
 }
-
-.service {
-  text-align: center;
-}
-
 
 /*Portfolio*/
 
