@@ -30,13 +30,23 @@ h3 {
 }
 
 .bio h2 {
-
-    background: -webkit-linear-gradient(#2E6171, #4B3F72);
+   background: -webkit-linear-gradient(#2E6171, #4B3F72);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*color: #2E6171;*/
-  /*color: #4B3F72;*/
+}
 
+.bio h3 {
+  background: -webkit-linear-gradient(#2E6171, #4B3F72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bio i {
+  color: #2E6171;
+}
+
+.bio p {
+  color: #4B3F72;
 }
 
 
@@ -164,7 +174,7 @@ h3 {
   grid-gap: 16px;
 }
 
-// Smallest device
+/*// Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
@@ -197,7 +207,7 @@ h3 {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+}*/
 
 
 
@@ -232,7 +242,7 @@ h3 {
 /*Spinner*/
 #container {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
   -webkit-perspective-origin: 50% 225px;
 }
