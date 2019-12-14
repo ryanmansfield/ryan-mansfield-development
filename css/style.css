@@ -16,9 +16,6 @@
 
 
 /*General Style Rules*/
-h2 {
-  text-align: center;
-}
 
 h3 {
   text-align: center;
@@ -90,6 +87,7 @@ h3 {
 
 .bio h2 {
   padding: 16px;
+  text-align: center;
 }
 
 
