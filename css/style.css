@@ -101,7 +101,7 @@ h3 {
 
 .skills {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /*Portfolio*/
