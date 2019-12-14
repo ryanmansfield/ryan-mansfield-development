@@ -14,7 +14,7 @@
 */
 /*General Style Rules*/
 h2 {
-  /*text-align: center;*/
+  text-align: center;
 }
 
 h3 {
@@ -22,54 +22,19 @@ h3 {
 }
 
 
-/*Bio Section*/
-.bio {
-  height: 100vh;
-  background-color: #09090B;
-
+/*Button*/
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #2E6171;
+  transition: background 0.3s ease;
 }
 
-.bio h2 {
-   background: -webkit-linear-gradient(#2E6171, #4B3F72);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.btn-flat:hover {
+  background: #556F7A;
+  color: white;
 }
-
-.bio h3 {
-  background: -webkit-linear-gradient(#2E6171, #4B3F72);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.bio i {
-  color: #2E6171;
-}
-
-.bio p {
-  color: #4B3F72;
-}
-
-
-
-.portfolio {
-  height: 100vh;
-   background-color: #09090B;
-  /*color: #2E6171;*/
-  color: #4B3F72;
-
-}
-
-.services {
-  height: 15vh;
-  padding-top: 8px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.service {
-  text-align: center;
-}
-
 
 /*Banner*/
 .banner {
@@ -116,26 +81,70 @@ h3 {
 }
 
 
-/*Button*/
-.btn-flat {
+/*Bio Section*/
+.bio {
+  height: 100vh;
+  background-color: #09090B;
   color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #2E6171;
-  transition: background 0.3s ease;
+  overflow: auto;
 }
 
-.btn-flat:hover {
-  background: #556F7A;
+.bio h2 {
+  /* background: -webkit-linear-gradient(#2E6171, #4B3F72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  /*color: white;*/
+  padding: 16px;
+}
+
+
+.bio i {
+  color: #2E6171;
+}
+
+.bio p {
   color: white;
 }
+
+
+/*Services*/
+
+.services {
+  /* height: 15vh; */
+  /* padding-top: 8px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  text-align: center;
+}
+
+
+/*Portfolio*/
+
+.portfolio {
+  background-color: #09090B;
+  /*color: #2E6171;*/
+  color: white;
+}
+
+
+
 
 
 /*Card*/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+}
 .card {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: black;
 }
 
 .card > a > img {
@@ -163,15 +172,6 @@ h3 {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-}
-
-
-
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
 }
 
 /*// Smallest device
@@ -242,13 +242,13 @@ h3 {
 /*Spinner*/
 #container {
   width: 100%;
-  height: 75vh;
+  height: 65vh;
   -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
   -webkit-perspective-origin: 50% 225px;
 }
 #stage {
   width: 100%;
-  height: 100%;
+  height: 65vh;
   -webkit-transition: -webkit-transform 2s;
   -webkit-transform-style: preserve-3d;
 }
@@ -350,27 +350,5 @@ h3 {
 .controls > div {
   margin: 10px;
 }
-
-
-
-/*Site Responsiveness*/
-/*@media (max-width: 960px) {*/
-  /* For a screen < 960px, this CSS will be read */
-  /*.container {*/
-    /*width: 700px;*/
-  /*}*/
-/*}*/
-/*@media (max-width: 720px) {*/
-  /* For a screen < 720px, this CSS will be read */
-  /*.container {*/
-    /*width: 500px;*/
-  /*}*/
-/*}*/
-/*@media (max-width: 540px) {*/
-  /* For a screen < 540px, this CSS will be read */
-  /*.container {*/
-    /*width: 300px;*/
-  /*}*/
-/*}*/
 
 
