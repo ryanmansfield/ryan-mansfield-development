@@ -43,13 +43,11 @@ h3 {
 .banner {
   background-size: cover;
   background-position: center;
-
   height: 100vh;
 }
 
-.banner-container {
-  padding: 150px 10%;
-
+.container {
+    padding: 150px 10%;
 }
 
 .banner h1 {
@@ -67,7 +65,6 @@ h3 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 .banner a {
-  /*color: #4B3F72;*/
   color:  #1F2041;
   text-shadow: white 0px 0px 10px;
 }
@@ -89,14 +86,9 @@ h3 {
   height: 100vh;
   background-color: #09090B;
   color: white;
-  overflow: auto;
 }
 
 .bio h2 {
-  /* background: -webkit-linear-gradient(#2E6171, #4B3F72);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
-  /*color: white;*/
   padding: 16px;
 }
 
@@ -109,12 +101,7 @@ h3 {
   color: white;
 }
 
-
-/*Services*/
-
 .services {
-  /* height: 15vh; */
-  /* padding-top: 8px; */
   display: flex;
   justify-content: space-around;
 }
@@ -128,13 +115,8 @@ h3 {
 
 .portfolio {
   background-color: #09090B;
-  /*color: #2E6171;*/
   color: white;
 }
-
-
-
-
 
 /*Card*/
 .cards {
@@ -177,41 +159,6 @@ h3 {
   position: relative;
 }
 
-/*// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}*/
-
 
 
 /*Footer*/
@@ -242,116 +189,118 @@ h3 {
   color: #D23333;
 }
 
+
 /*Spinner*/
-#container {
-  width: 100%;
-  height: 65vh;
-  -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
-  -webkit-perspective-origin: 50% 225px;
-}
-#stage {
-  width: 100%;
-  height: 65vh;
-  -webkit-transition: -webkit-transform 2s;
-  -webkit-transform-style: preserve-3d;
-}
-
-#shape {
-  position: relative;
-  top: 160px;
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-  -webkit-transform-style: preserve-3d;
-}
-
-.plane {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  border: 1px solid white;
-  -webkit-border-radius: 12px;
-  -webkit-box-sizing: border-box;
-  text-align: center;
-  font-family: Times, serif;
-  font-size: 124pt;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: -webkit-transform 2s, opacity 2s;
-  -webkit-backface-visibility: hidden;
-}
-
-#shape.backfaces .plane {
-  -webkit-backface-visibility: visible;
-}
-
-#shape {
-  -webkit-animation: spin 12s infinite linear;
-}
-
-@-webkit-keyframes spin {
-  from { -webkit-transform: rotateY(0); }
-  to   { -webkit-transform: rotateY(-360deg); }
-}
-
-/* ---------- ring styles ------------- */
-.ring > .one {
-  -webkit-transform: translateZ(380px);
-}
-
-.ring > .two {
-  -webkit-transform: rotateY(30deg) translateZ(380px);
-}
-
-.ring > .three {
-  -webkit-transform: rotateY(60deg) translateZ(380px);
-}
-
-.ring > .four {
-  -webkit-transform: rotateY(90deg) translateZ(380px);
-}
-
-.ring > .five {
-  -webkit-transform: rotateY(120deg) translateZ(380px);
-}
-
-.ring > .six {
-  -webkit-transform: rotateY(150deg) translateZ(380px);
-}
-
-.ring > .seven {
-  -webkit-transform: rotateY(180deg) translateZ(380px);
-}
-
-.ring > .eight {
-  -webkit-transform: rotateY(210deg) translateZ(380px);
-}
-
-.ring > .nine {
-  -webkit-transform: rotateY(-120deg) translateZ(380px);
-}
-
-.ring > .ten {
-  -webkit-transform: rotateY(-90deg) translateZ(380px);
-}
-
-.ring > .eleven {
-  -webkit-transform: rotateY(300deg) translateZ(380px);
-}
-
-.ring > .twelve {
-  -webkit-transform: rotateY(330deg) translateZ(380px);
-}
-
-.controls {
-  width: 80%;
-  margin: 0 auto;
-  padding: 5px 20px;
-  -webkit-border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.controls > div {
-  margin: 10px;
-}
 
 
+  #container {
+      width: 100%;
+      height: 700px;
+      -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
+      -webkit-perspective-origin: 50% 225px;
+    }
+    #stage {
+      width: 100%;
+      height: 100%;
+      -webkit-transition: -webkit-transform 2s;
+      -webkit-transform-style: preserve-3d;
+      overflow: hidden;
+    }
+
+    #shape {
+      position: relative;
+      top: 160px;
+      margin: 0 auto;
+      height: 200px;
+      width: 200px;
+      -webkit-transform-style: preserve-3d;
+    }
+
+    .plane {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border: 1px solid white;
+      -webkit-border-radius: 12px;
+      -webkit-box-sizing: border-box;
+      text-align: center;
+      font-family: Times, serif;
+      font-size: 124pt;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.6);
+      -webkit-transition: -webkit-transform 2s, opacity 2s;
+      -webkit-backface-visibility: hidden;
+    }
+
+    #shape.backfaces .plane {
+      -webkit-backface-visibility: visible;
+    }
+
+    #shape {
+      -webkit-animation: spin 8s infinite linear;
+    }
+
+    @-webkit-keyframes spin {
+      from { -webkit-transform: rotateY(0); }
+      to   { -webkit-transform: rotateY(-360deg); }
+    }
+
+    /* ---------- ring styles ------------- */
+    .ring > .one {
+      -webkit-transform: translateZ(380px);
+    }
+
+    .ring > .two {
+      -webkit-transform: rotateY(30deg) translateZ(380px);
+    }
+
+    .ring > .three {
+      -webkit-transform: rotateY(60deg) translateZ(380px);
+    }
+
+    .ring > .four {
+      -webkit-transform: rotateY(90deg) translateZ(380px);
+    }
+
+    .ring > .five {
+      -webkit-transform: rotateY(120deg) translateZ(380px);
+    }
+
+    .ring > .six {
+      -webkit-transform: rotateY(150deg) translateZ(380px);
+    }
+
+    .ring > .seven {
+      -webkit-transform: rotateY(180deg) translateZ(380px);
+    }
+
+    .ring > .eight {
+      -webkit-transform: rotateY(210deg) translateZ(380px);
+    }
+
+    .ring > .nine {
+      -webkit-transform: rotateY(-120deg) translateZ(380px);
+    }
+
+    .ring > .ten {
+      -webkit-transform: rotateY(-90deg) translateZ(380px);
+    }
+
+    .ring > .eleven {
+      -webkit-transform: rotateY(300deg) translateZ(380px);
+    }
+
+    .ring > .twelve {
+      -webkit-transform: rotateY(330deg) translateZ(380px);
+    }
+
+    .controls {
+      width: 80%;
+      margin: 0 auto;
+      padding: 5px 20px;
+      -webkit-border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .controls > div {
+      margin: 10px;
+    }
