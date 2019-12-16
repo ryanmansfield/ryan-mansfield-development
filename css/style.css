@@ -85,14 +85,18 @@ h3 {
 }
 
 .bio h2 {
-  padding: 16px;
+  margin: 24px;
   text-align: center;
 }
 
+.bio h3 {
+  margin-bottom: 16px;
+}
 
 .bio i {
   color: #2E6171;
   font-size: 100px;
+  padding: 16px;
 }
 
 .bio p {
@@ -101,14 +105,20 @@ h3 {
 
 .skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 
 /*Portfolio*/
 
 .portfolio {
   background-color: #09090B;
   color: white;
+}
+
+#portfolio {
+  margin-top: 24px;
+  margin-bottom: 0px;
 }
 
 /*Card*/
